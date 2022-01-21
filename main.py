@@ -37,7 +37,7 @@ def returncode(string):
     for i in range(len(data)):
         if data[i]["name"]==string:
             filename=data[i]["cardCode"]
-            return filename
+            return filename+".png"
 filename = returncode(option)
 #filename = data[43]["cardCode"] + ".png"
 image = Image.open(filename)
