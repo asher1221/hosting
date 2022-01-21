@@ -9,13 +9,6 @@ import sys
 sys.path.append('/usr/lib/python3/dist-packages')
 
 
-st.write("""
-# Ashers Web App
-Some Testing Below
-
-Hello
-""")
-
 import streamlit as st
 
 from PIL import Image
