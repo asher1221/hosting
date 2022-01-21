@@ -9,13 +9,6 @@ import sys
 sys.path.append('/usr/lib/python3/dist-packages')
 
 
-st.write("""
-# Ashers Web App
-Some Testing Below
-
-Hello
-""")
-
 import streamlit as st
 
 from PIL import Image
@@ -34,7 +27,11 @@ Some Testing Below
 
 Hello
 """)
+nameslist = []
+for i in range(len(data)):
+    nameslist.append(data[i]["name"])
 
+option = st.selectbox('Pick a Card',nameslist)
 
 filename = data[43]["cardCode"] + ".png"
 image = Image.open(filename)
