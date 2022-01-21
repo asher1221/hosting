@@ -38,4 +38,4 @@ Hello
 
 filename = data[43]["cardCode"] + ".png"
 image = Image.open(filename)
-st.image(image, caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+st.image(image, caption=None, width=200, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
